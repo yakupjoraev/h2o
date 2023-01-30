@@ -1,1 +1,27 @@
-// Header
+// Header enter
+
+.header {
+  background: linear-gradient(268.89deg, #58C0D7 0%, #3F98CE 100%);
+  border-radius: 0px 0px 15px 15px;
+}
+
+.nav {
+  padding: em(14) 0;
+
+  // .nav__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: em(15);
+  }
+
+  // .nav__link-text
+
+  &__link-text {
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(22);
+    color: var(--white-color);
+  }
+}
