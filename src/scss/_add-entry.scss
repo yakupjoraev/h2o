@@ -47,6 +47,40 @@
     }
   }
 
+  &__select {
+    width: 100%;
+    outline: 0;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(22);
+    color: var(--text-color);
+
+    &:disabled {
+      user-select: none;
+      pointer-events: none;
+      color: var(--grey-color);
+
+      &~label {
+        color: var(--grey-color);
+      }
+    }
+
+    &.js-error {
+      border: 1px solid var(--red-color);
+      color: var(--red-color);
+    }
+  }
+
+  &__select-option {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(22);
+    color: var(--text-color);
+  }
+
   &__edit {
     display: none;
     position: absolute;

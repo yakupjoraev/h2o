@@ -1,39 +1,29 @@
 <section class="add-entry">
   <div class="container">
     <h1 class="add-entry__title main-title">
-      Добавление новой записи
+      № 00813079
     </h1>
     <form class="add-entry__form" action="#">
 
       <div class="add-entry__top">
         <div class="add-entry__group input-group">
-          <input class="add-entry__input input" type="text" placeholder="Номер CИ">
+          <input class="add-entry__input input" type="text" placeholder="Номер CИ" value="37303-08" disabled>
           <label class="add-entry__label label" for="">Номер CИ</label>
         </div>
 
-        <!-- <div class="add-entry__group input-group">
-          <input class="add-entry__input input" type="text" placeholder="Модификация">
-          <label class="add-entry__label label" for="">Модификация</label>
-        </div> -->
-
-        <div class="add-entry__group input-group input">
-          <select class="add-entry__select" name="modification" id="select-modification">
-            <option class="add-entry__select-option" value="mod-1">1Росич ВКМ-15</option>
-            <option class="add-entry__select-option" value="mod-2">2Росич ВКМ-15</option>
-            <option class="add-entry__select-option" value="mod-3">3Росич ВКМ-15</option>
-            <option class="add-entry__select-option" value="mod-4">3Росич ВКМ-15</option>
-          </select>
+        <div class="add-entry__group input-group">
+          <input class="add-entry__input input" type="text" placeholder="Модификация" value="Росич ВКМ-15" disabled>
           <label class="add-entry__label label" for="">Модификация</label>
         </div>
 
-
         <div class="add-entry__group input-group">
-          <input class="add-entry__input input" type="text" placeholder="Наим. методики поверки">
+          <input class="add-entry__input input" type="text" placeholder="Наим. методики поверки" value="МИ № 1592-2015"
+            disabled>
           <label class="add-entry__label label" for="">Наим. методики поверки</label>
         </div>
 
         <div class="add-entry__group input-group">
-          <input class="add-entry__input input" type="text" placeholder="Заводской номер СИ">
+          <input class="add-entry__input input" type="text" placeholder="Заводской номер СИ" value="00813079" disabled>
           <label class="add-entry__label label" for="">Заводской номер СИ</label>
 
           <!-- работает если верхний Input disabled -->
@@ -47,16 +37,12 @@
 
 
           <label class="add-entry__radio-label radio-label" for="type-water1">
-            <input class="add-entry__radio radio-input" type="radio" name="type-water" id="type-water1">
+            <input class="add-entry__radio radio-input" type="radio" name="type-water" id="type-water1" checked
+              disabled>
             <div class="add-entry__radio-decor radio-decor"></div>
             <span class="add-entry__radio-descr radio-descr">ГВС</span>
           </label>
 
-          <label class="add-entry__radio-label radio-label" for="type-water2">
-            <input class="add-entry__radio radio-input" type="radio" name="type-water" id="type-water2">
-            <div class="add-entry__radio-decor radio-decor"></div>
-            <span class="add-entry__radio-descr radio-descr">ХВС</span>
-          </label>
         </div>
 
         <div class="add-entry__group add-entry__group--radio radio-group">
@@ -64,15 +50,8 @@
             Владелец
           </span>
 
-
-          <label class="add-entry__radio-label radio-label" for="owner1">
-            <input class="add-entry__radio radio-input" type="radio" name="type-owner" id="owner1">
-            <div class="add-entry__radio-decor radio-decor"></div>
-            <span class="add-entry__radio-descr radio-descr">Физ. лицо</span>
-          </label>
-
           <label class="add-entry__radio-label radio-label" for="owner2">
-            <input class="add-entry__radio radio-input" type="radio" name="type-owner" id="owner2">
+            <input class="add-entry__radio radio-input" type="radio" name="type-owner" id="owner2" checked disabled>
             <div class="add-entry__radio-decor radio-decor"></div>
             <span class="add-entry__radio-descr radio-descr">Юр. лицо</span>
           </label>
@@ -81,7 +60,8 @@
 
       <div class="add-entry__middle">
         <div class="add-entry__group input-group">
-          <input class="add-entry__input input" type="text" placeholder="Наименование юр. лица">
+          <input class="add-entry__input input" type="text" placeholder="Наименование юр. лица" value="ООО “Генезис”"
+            disabled>
           <label class="add-entry__label label" for="">Наименование юр. лица</label>
         </div>
 
@@ -92,31 +72,28 @@
 
 
           <label class="add-entry__radio-label radio-label" for="type-name-firm1">
-            <input class="add-entry__radio radio-input" type="radio" name="type-name-firm" id="type-name-firm1">
+            <input class="add-entry__radio radio-input" type="radio" name="type-name-firm" id="type-name-firm1" checked
+              disabled>
             <div class="add-entry__radio-decor radio-decor"></div>
             <span class="add-entry__radio-descr radio-descr">Пригодно</span>
           </label>
 
-          <label class="add-entry__radio-label radio-label" for="type-name-firm2">
-            <input class="add-entry__radio radio-input" type="radio" name="type-name-firm" id="type-name-firm2">
-            <div class="add-entry__radio-decor radio-decor"></div>
-            <span class="add-entry__radio-descr radio-descr">Непригодно</span>
-          </label>
         </div>
 
         <div class="add-entry__middle-goups">
           <div class="add-entry__group input-group">
-            <input class="add-entry__input input" type="number" value="25" placeholder="Темп.окружающей среды">
+            <input class="add-entry__input input" type="number" value="25" placeholder="Темп.окружающей среды" disabled>
             <label class="add-entry__label label" for="">Темп.окружающей среды</label>
           </div>
 
           <div class="add-entry__group input-group">
-            <input class="add-entry__input input" type="number" value="95" placeholder="Атмосферное давление">
+            <input class="add-entry__input input" type="number" value="95" placeholder="Атмосферное давление" disabled>
             <label class="add-entry__label label" for="">Атмосферное давление</label>
           </div>
 
           <div class="add-entry__group input-group">
-            <input class="add-entry__input input" type="number" value="50" placeholder="Относительная влажность">
+            <input class="add-entry__input input" type="number" value="50" placeholder="Относительная влажность"
+              disabled>
             <label class="add-entry__label label" for="">Относительная влажность</label>
           </div>
         </div>
