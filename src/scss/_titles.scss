@@ -1,0 +1,12 @@
+.main-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: rem(36);
+  line-height: rem(40);
+  color: var(--main-color);
+
+  @media (max-width: $breakpoint992) {
+    font-size: rem(24);
+    line-height: rem(27);
+  }
+}

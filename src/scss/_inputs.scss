@@ -1,0 +1,33 @@
+.input {
+  width: 100%;
+  padding: em(20);
+  border: 1px solid #DDDDDD;
+  outline: 0;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  font-size: rem(16);
+  line-height: rem(22);
+  color: var(--text-color);
+
+  &::placeholder {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(22);
+    color: var(--grey-color);
+  }
+
+  &:focus {
+    border: 1px solid var(--main-color);
+  }
+
+  &:disabled {
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &.js-error {
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+  }
+}
