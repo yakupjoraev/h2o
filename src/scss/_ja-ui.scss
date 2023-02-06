@@ -156,3 +156,29 @@ a.ui-button:active {
 
   }
 }
+
+.ui-selectmenu-menu .ui-menu {
+  border-color: var(--grey-color-2);
+}
+
+.ui-menu .ui-menu-item {
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: rem(19);
+  color: var(--text-color);
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  padding: em(3);
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+}

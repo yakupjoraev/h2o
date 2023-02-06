@@ -35,7 +35,7 @@
     display: inline-flex;
     width: fit-content;
 
-    @media (max-width: $breakpoint480) {
+    @media (max-width: $breakpoint768) {
       width: 100%;
     }
   }
@@ -52,9 +52,28 @@
 
   &__form {}
 
+  &__main {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: calc(100% - 90px);
+      width: rem(58);
+      background: linear-gradient(270deg, rgba(50, 136, 180, 0.19) 0%, rgba(50, 136, 180, 0) 100%);
+
+      @media (max-width: $breakpoint768) {
+        height: calc(100% - 115px);
+      }
+    }
+  }
+
   // .pivot-table__content
 
   &__content {
+    position: relative;
     margin-bottom: em(30);
     overflow-x: scroll;
     scrollbar-color: var(--main-color) var(--grey-color-2);
@@ -192,6 +211,17 @@
   display: flex;
   align-items: center;
 
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   // .table-form__datepickers
 
   &__datepickers {
@@ -199,19 +229,42 @@
     align-items: center;
     gap: em(10);
     margin-right: em(20);
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      margin-right: 0;
+      width: 100%;
+    }
   }
 
   // .table-form__datepicker
 
   &__datepicker {
+    position: relative;
     display: flex;
     align-items: center;
     gap: em(10);
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+      & .ui-datepicker-trigger {
+        position: absolute;
+        right: 20px;
+        top: 40px;
+      }
+    }
   }
 
   &__datepicker-input {
     width: rem(130);
     height: rem(44);
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+    }
   }
 
   // .table-form__datepicker-text
@@ -232,6 +285,10 @@
     margin-right: em(35);
     font-size: rem(14);
     line-height: rem(19);
+
+    @media (max-width: $breakpoint768) {
+      width: 100%;
+    }
   }
 
   // .table-form__checkbox
@@ -246,7 +303,16 @@
 
   // .table-form__label
 
-  &__label {}
+  &__label {
+
+    @media (max-width: 1200px) {
+      flex: 0 1 40%;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+  }
 
   // .table-form__label-decor
 
@@ -275,6 +341,15 @@
     font-size: rem(14);
     line-height: rem(19);
     color: var(--text-color);
+
+    @media (max-width: 1200px) {
+      // max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+      margin-left: 0;
+    }
 
     & .ui-selectmenu-button {
       position: relative;
@@ -317,30 +392,4 @@
   // .table-form__select-select
 
   &__select-select {}
-}
-
-.ui-selectmenu-menu .ui-menu {
-  border-color: var(--grey-color-2);
-}
-
-.ui-menu .ui-menu-item {
-  font-family: var(--font-main);
-  font-weight: 600;
-  font-size: rem(14);
-  line-height: rem(19);
-  color: var(--text-color);
-}
-
-.ui-menu .ui-menu-item-wrapper {
-  padding: em(3);
-}
-
-.ui-state-active,
-.ui-widget-content .ui-state-active,
-.ui-widget-header .ui-state-active,
-a.ui-button:active,
-.ui-button:active,
-.ui-button.ui-state-active:hover {
-  border-color: var(--main-color);
-  background-color: var(--main-color);
 }

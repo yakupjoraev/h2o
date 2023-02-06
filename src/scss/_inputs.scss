@@ -195,3 +195,92 @@
   line-height: rem(22);
   color: var(--text-color);
 }
+
+.swich-label {}
+
+.swich-input {
+
+  &:disabled~.swich-decor {
+    background-color: #DDDDDD;
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  &:disabled:hover~.swich-decor {
+    border: 1px solid transparent;
+    cursor: default;
+  }
+
+  &:checked:disabled~.swich-decor {
+    background: #DDDDDD;
+  }
+
+  &:checked:hover~.swich-decor {
+    background-color: var(--main-color-hover);
+  }
+}
+
+.swich-decor {}
+
+.swich-label {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: em(33);
+  height: em(20);
+
+  &:hover .swich-decor {
+    border: 1px solid var(--main-color);
+  }
+
+  &:focus .swich-decor {
+    border: 1px solid rgba(50, 136, 180, 0.3);
+  }
+}
+
+.swich-label .swich-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -100;
+}
+
+.swich-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--grey-color);
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.swich-decor:before {
+  position: absolute;
+  content: "";
+  height: em(15);
+  width: em(15);
+  border-radius: 100%;
+  left: 0.1em;
+  bottom: 0.1em;
+  background-color: var(--white-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.swich-input:checked+.swich-decor::before {
+  background-color: var(--white-color);
+}
+
+.swich-input:checked+.swich-decor {
+  background-color: var(--main-color);
+}
+
+.swich-input:checked+.swich-decor:before {
+  transform: translateX(em(12));
+}

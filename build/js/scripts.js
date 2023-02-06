@@ -51,3 +51,7 @@ $(function () {
 });
 
 
+
+// вызов модалки
+
+const modal = new GraphModal();

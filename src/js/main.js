@@ -49,3 +49,8 @@ $(function () {
   $.datepicker.setDefaults($.datepicker.regional['ru']);
 });
 
+
+
+// вызов модалки
+
+const modal = new GraphModal();
