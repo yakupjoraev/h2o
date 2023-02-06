@@ -11,7 +11,7 @@ $(function () {
 
 $(function () {
   $("#datepicker-1").datepicker({
-    changeMonth: true,
+    changeMonth: false,
     changeYear: true,
     showOn: "button",
     buttonImage: "./img/icons/datepicker.svg",
@@ -20,7 +20,7 @@ $(function () {
   });
 
   $("#datepicker-2").datepicker({
-    changeMonth: true,
+    changeMonth: false,
     changeYear: true,
     showOn: "button",
     buttonImage: "./img/icons/datepicker.svg",
@@ -35,7 +35,7 @@ $(function () {
     nextText: 'Следующий',
     currentText: 'Сегодня',
     monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-    monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+    monthNamesShort: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
     dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
     dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
     dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
