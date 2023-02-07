@@ -380,7 +380,177 @@
     <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
     <div class="graph-modal__content">
       <!-- контент модального окна -->
-      11111111111
+      <div class="edit-post">
+        <h1 class="edit-post__title main-title">
+          Редактировать запись
+        </h1>
+
+        <form class="edit-post__form" action="#">
+          <div class="edit-post__header">
+            <div class="edit-post__group input-group">
+              <div class="edit-post__datepicker">
+                <input class="edit-post__datepicker-input input" type="text" id="datepicker-3" placeholder="Дата"
+                  value="25.01.22">
+                <label class="edit-post__label label" for="">Дата</label>
+              </div>
+            </div>
+
+            <div class="edit-post__group input-group">
+              <div class="edit-post__datepicker">
+                <input class="edit-post__datepicker-input input" type="text" id="datepicker-4"
+                  placeholder="Дата действительности поверки" value="27.01.22">
+                <label class="edit-post__label label" for="">Дата действительности поверки</label>
+              </div>
+            </div>
+
+            <div class="edit-post__group input-group">
+              <input class="edit-post__input input" type="text" placeholder="Номер эталона" value="08959-4567">
+              <label class="edit-post__label label" for="">Номер эталона</label>
+            </div>
+
+            <div class="edit-post__group input-group">
+              <input class="edit-post__input input" type="text" placeholder="Номер в Госреестре" value="37303-08">
+              <label class="edit-post__label label" for="">Номер в Госреестре</label>
+            </div>
+
+            <div class="edit-post__group input-group input">
+              <select class="edit-post__select" name="modification" id="select-modification">
+                <option class="edit-post__select-option" value="mod-1">1Росич ВКМ-15</option>
+                <option class="edit-post__select-option" value="mod-2">2Росич ВКМ-15</option>
+                <option class="edit-post__select-option" value="mod-3">3Росич ВКМ-15</option>
+                <option class="edit-post__select-option" value="mod-4">3Росич ВКМ-15</option>
+              </select>
+              <label class="edit-post__label label" for="">Модификация</label>
+            </div>
+
+            <div class="edit-post__group input-group">
+              <input class="edit-post__input input" type="text" placeholder="Заводской номер" value="00813079">
+              <label class="edit-post__label label" for="">Заводской номер</label>
+            </div>
+          </div>
+
+          <div class="edit-post__header-radio">
+            <div class="edit-post__group edit-post__group--radio radio-group">
+              <span class="edit-post__type radio-type">
+                Тип водоснабжения
+              </span>
+
+
+              <label class="edit-post__radio-label radio-label" for="type-water-edit1">
+                <input class="edit-post__radio radio-input" type="radio" name="type-water-edit" id="type-water-edit1"
+                  checked>
+                <div class="edit-post__radio-decor radio-decor"></div>
+                <span class="edit-post__radio-descr radio-descr">ГВС</span>
+              </label>
+
+              <label class="edit-post__radio-label radio-label" for="type-water-edit2">
+                <input class="edit-post__radio radio-input" type="radio" name="type-water-edit" id="type-water-edit2">
+                <div class="edit-post__radio-decor radio-decor"></div>
+                <span class="edit-post__radio-descr radio-descr">ХВС</span>
+              </label>
+            </div>
+
+            <div class="edit-post__group edit-post__group--radio radio-group">
+              <span class="edit-post__type radio-type">
+                Владелец
+              </span>
+
+
+              <label class="edit-post__radio-label radio-label" for="owner-edit1">
+                <input class="edit-post__radio radio-input" type="radio" name="type-owner-edit" id="owner-edit1">
+                <div class="edit-post__radio-decor radio-decor"></div>
+                <span class="edit-post__radio-descr radio-descr">Физ. лицо</span>
+              </label>
+
+              <label class="edit-post__radio-label radio-label" for="owner-edit2">
+                <input class="edit-post__radio radio-input" type="radio" name="type-owner-edit" id="owner-edit2"
+                  checked>
+                <div class="edit-post__radio-decor radio-decor"></div>
+                <span class="edit-post__radio-descr radio-descr">Юр. лицо</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="edit-post__group input-group">
+            <input class="edit-post__input input" type="text" placeholder="Владелец" value="ООО “Генезис”">
+            <label class="edit-post__label label" for="">Владелец</label>
+          </div>
+
+          <div class="edit-post__middle">
+            <div class="edit-post__middle-top">
+              <div class="edit-post__group input-group">
+                <input class="edit-post__input input" type="text"
+                  placeholder="Наим. док. на осн. которого выполнена поверка" value="МИ № 1592-2015">
+                <label class="edit-post__label label" for="">Наим. док. на осн. которого выполнена поверка</label>
+              </div>
+
+              <div class="edit-post__group edit-post__group--radio radio-group">
+                <span class="edit-post__type radio-type">
+                  Средство измерения
+                </span>
+
+
+                <label class="edit-post__radio-label radio-label" for="suitability1">
+                  <input class="edit-post__radio radio-input" type="radio" name="suitability" id="suitability1" checked>
+                  <div class="edit-post__radio-decor radio-decor"></div>
+                  <span class="edit-post__radio-descr radio-descr">Пригодно</span>
+                </label>
+
+                <label class="edit-post__radio-label radio-label" for="suitability">
+                  <input class="edit-post__radio radio-input" type="radio" name="suitability" id="suitability2">
+                  <div class="edit-post__radio-decor radio-decor"></div>
+                  <span class="edit-post__radio-descr radio-descr">Непригодно</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="edit-post__middle-bottom">
+              <div class="edit-post__group input-group">
+                <input class="edit-post__input input" type="number" placeholder="Темп. окружающей среды" value="25.00">
+                <label class="edit-post__label label" for="">Темп. окружающей среды</label>
+              </div>
+
+              <div class="edit-post__group input-group">
+                <input class="edit-post__input input" type="number" placeholder="Атмосферное давление" value="95.00">
+                <label class="edit-post__label label" for="">Атмосферное давление</label>
+              </div>
+
+              <div class="edit-post__group input-group">
+                <input class="edit-post__input input" type="number" placeholder="Относительная влажность" value="50.00">
+                <label class="edit-post__label label" for="">Относительная влажность</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="edit-post__footer">
+            <div class="edit-post__btn btn-secondary">
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.5 8C14.5 9.65685 13.1569 11 11.5 11C9.84315 11 8.5 9.65685 8.5 8C8.5 6.34315 9.84315 5 11.5 5C13.1569 5 14.5 6.34315 14.5 8Z"
+                  stroke="#3288B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.5004 1C7.02281 1 3.23253 3.94288 1.95825 7.99997C3.23251 12.0571 7.02281 15 11.5005 15C15.9781 15 19.7684 12.0571 21.0426 8.00004C19.7684 3.94291 15.9781 1 11.5004 1Z"
+                  stroke="#3288B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              Посмотреть фото
+            </div>
+
+            <div class="edit-post__btn-delete">
+              <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 4L14.1991 16.0129C14.129 17.065 14.0939 17.5911 13.8667 17.99C13.6666 18.3412 13.3648 18.6235 13.0011 18.7998C12.588 19 12.0607 19 11.0062 19H6.99377C5.93927 19 5.41202 19 4.99889 18.7998C4.63517 18.6235 4.33339 18.3412 4.13332 17.99C3.90607 17.5911 3.871 17.065 3.80086 16.0129L3 4M1 4H17M13 4L12.7294 3.18807C12.4671 2.40125 12.3359 2.00784 12.0927 1.71698C11.8779 1.46013 11.6021 1.26132 11.2905 1.13878C10.9376 1 10.523 1 9.69357 1H8.30643C7.47705 1 7.06236 1 6.70951 1.13878C6.39792 1.26132 6.12208 1.46013 5.90729 1.71698C5.66405 2.00784 5.53292 2.40125 5.27064 3.18807L5 4"
+                  stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              Удалить фото
+            </div>
+
+            <button type="button" class="edit-post__save btn-disable">Сохранить изменения</button>
+            <button type="button" class="edit-post__delete">Удалить запись</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
