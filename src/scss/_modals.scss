@@ -1,3 +1,5 @@
+// стили для первой модалки
+
 .graph-modal {
 
   // .graph-modal__container
@@ -8,6 +10,10 @@
 
     @media (max-width: $breakpoint992) {
       width: 90%;
+    }
+
+    @media (max-width: $breakpoint480) {
+      width: 97%;
     }
   }
 
@@ -298,4 +304,227 @@
     line-height: rem(22);
     color: var(--grey-color);
   }
+}
+
+// стили для второй модалки
+
+.dimension-edit {
+  max-width: rem(890);
+  padding: rem(55);
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint992) {
+    padding: rem(40);
+  }
+
+  @media (max-width: $breakpoint768) {
+    padding: rem(20);
+  }
+
+  // .dimension-edit__title
+
+  &__title {
+    margin-bottom: rem(35);
+    text-align: center;
+  }
+
+  // .dimension-edit__form
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(25) rem(20);
+  }
+
+  // .dimension-edit__group
+
+  &__group {
+    position: relative;
+
+    &:nth-child(1) {
+      grid-column: span 2;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column: span 2;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(3) {
+      grid-column: span 2;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(4) {
+      grid-column: span 1;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(5) {
+      grid-column: span 1;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(6) {
+      grid-column: span 2;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(7) {
+      grid-column: span 1;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(8) {
+      grid-column: span 1;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(9) {
+      grid-column: span 4;
+    }
+
+    &:nth-child(10) {
+      grid-column: span 2;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(11) {
+      grid-column: span 2;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(12) {
+      grid-column: span 4;
+    }
+
+    &:nth-child(13) {
+      grid-column: span 2;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+
+      @media (max-width: 370px) {
+        & .dimension-edit__label {
+          left: 0;
+          font-size: rem(10);
+        }
+      }
+    }
+
+    &:nth-child(14) {
+      grid-column: span 2;
+
+      @media (max-width: $breakpoint768) {
+        grid-column: span 4;
+      }
+    }
+
+    &:nth-child(15) {
+      grid-column: span 4;
+    }
+  }
+
+  &__textarea {
+    display: inline-block;
+    height: fit-content;
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(22);
+    color: var(--text-color);
+    text-align: left;
+    resize: none;
+
+    &::placeholder {
+      font-family: var(--font-main);
+      font-weight: 600;
+      font-size: rem(16);
+      line-height: rem(22);
+      color: var(--grey-color);
+    }
+
+    @media (max-width: 370px) {
+      font-size: rem(15);
+      line-height: rem(20);
+    }
+  }
+
+  // .dimension-edit__input
+
+  &__input {}
+
+  // .dimension-edit__label
+
+  &__label {}
+
+  // .dimension-edit__select
+
+  &__select {}
+
+  // .dimension-edit__select-option
+
+  &__select-option {}
+
+  // .dimension-edit__save
+
+  &__save {
+    grid-column: span 4;
+  }
+
+  // .dimension-edit__delete
+
+  &__delete {
+    grid-column: span 4;
+  }
+}
+
+.dimension-edit__input-added {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.dimension-edit__input-delete {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--white-color);
+  overflow: hidden;
+  cursor: pointer;
 }
