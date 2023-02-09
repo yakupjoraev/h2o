@@ -47,6 +47,24 @@ $(function () {
     buttonText: "Выбрать дату",
   });
 
+  $("#datepicker-5").datepicker({
+    changeMonth: false,
+    changeYear: true,
+    showOn: "button",
+    buttonImage: "./img/icons/datepicker.svg",
+    // buttonImageOnly: true,
+    buttonText: "Выбрать дату",
+  });
+
+  $("#datepicker-6").datepicker({
+    changeMonth: false,
+    changeYear: true,
+    showOn: "button",
+    buttonImage: "./img/icons/datepicker.svg",
+    // buttonImageOnly: true,
+    buttonText: "Выбрать дату",
+  });
+
   /* Локализация datepicker */
   $.datepicker.regional['ru'] = {
     closeText: 'Закрыть',

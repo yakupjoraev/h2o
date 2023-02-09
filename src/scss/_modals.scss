@@ -115,7 +115,9 @@
   // .edit-post__label
 
   &__label {
-    white-space: nowrap;
+    width: fit-content;
+    max-width: 90%;
+    padding: 0 !important;
   }
 
   // .edit-post__input
@@ -228,7 +230,7 @@
     @media (max-width:370px) {
 
       .edit-post__label {
-        left: 0;
+        // left: 0;
         font-size: 9px;
       }
     }
@@ -438,7 +440,7 @@
 
       @media (max-width: 370px) {
         & .dimension-edit__label {
-          left: 0;
+          // left: 0;
           font-size: rem(10);
         }
       }
@@ -488,7 +490,11 @@
 
   // .dimension-edit__label
 
-  &__label {}
+  &__label {
+    width: fit-content;
+    max-width: 90%;
+    padding: 0 !important;
+  }
 
   // .dimension-edit__select
 
@@ -513,7 +519,7 @@
 
 .dimension-edit__input-added {
   position: absolute;
-  right: 20px;
+  right: rem(20);
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -521,10 +527,232 @@
 
 .dimension-edit__input-delete {
   position: absolute;
-  right: 20px;
+  right: rem(20);
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--white-color);
   overflow: hidden;
   cursor: pointer;
+}
+
+
+
+// другие модалки
+
+.graph-modal__container--little {
+  width: rem(520);
+
+  & .graph-modal__close {
+    top: rem(10);
+    right: rem(10);
+  }
+}
+
+.graph-modal__container--text {
+  width: rem(300);
+
+  & .graph-modal__close {
+    top: rem(10);
+    right: rem(10);
+  }
+}
+
+
+.delete-dimension {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.delete-dimension__title {
+  margin-bottom: rem(10);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: rem(27);
+  text-align: center;
+  color: var(--main-color);
+}
+
+.delete-dimension__descr {
+  margin-bottom: rem(20);
+  text-align: center;
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: rem(22);
+  color: var(--main-color);
+}
+
+.delete-dimension__btns {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+}
+
+.delete-dimension__btn {
+  width: rem(165);
+
+  @media (max-width: $breakpoint480) {
+    width: rem(120);
+  }
+}
+
+.delete-dimension__btn:nth-child(2) {
+  border-color: var(--grey-color);
+  color: var(--grey-color);
+}
+
+.delete-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: rem(30);
+}
+
+.delete-photo__title {
+  margin-bottom: rem(10);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: rem(27);
+  text-align: center;
+  color: var(--main-color);
+}
+
+.delete-photo__descr {
+  margin-bottom: rem(20);
+  text-align: center;
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: rem(22);
+  color: var(--main-color);
+}
+
+.delete-photo__btns {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+}
+
+.delete-photo__btn {
+  width: rem(165);
+
+  &:nth-child(2) {
+    border-color: var(--grey-color);
+    color: var(--grey-color);
+  }
+
+  @media (max-width: $breakpoint480) {
+    width: rem(120);
+  }
+}
+
+
+.delete-photo-successfully__title,
+.delete-dimension-successfully__title,
+.export-table-true {
+  padding: rem(30) 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: rem(22);
+  color: var(--main-color);
+}
+
+
+.export-table {
+  padding: rem(30);
+
+  @media (max-width: $breakpoint480) {
+    padding: rem(20);
+  }
+}
+
+.export-table__title {
+  margin-bottom: rem(10);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: rem(27);
+  text-align: center;
+  color: var(--main-color);
+}
+
+.export-table__descr {
+  margin-bottom: rem(20);
+  text-align: center;
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: rem(22);
+  color: var(--main-color);
+}
+
+.export-table__datepickers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+  margin-bottom: rem(20);
+
+  @media (max-width: $breakpoint480) {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.export-table__datepicker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+
+  & .ui-datepicker-trigger {
+    position: absolute;
+    top: rem(20);
+    right: rem(20);
+  }
+
+  @media (max-width: $breakpoint480) {
+    width: 100%;
+  }
+
+}
+
+.export-table__datepicker-text {
+  width: 20px;
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: rem(19);
+  color: var(--text-color);
+}
+
+.export-table__btn {
+
+  &+& {
+    margin-top: rem(10);
+  }
+
+  @media (max-width: $breakpoint480) {
+    font-size: rem(14);
+  }
+}
+
+.added-dimension__footer-text {
+  grid-column: span 4;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: rem(19);
+  color: var(--main-color);
+
+  svg {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+  }
 }
