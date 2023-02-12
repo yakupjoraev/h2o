@@ -144,7 +144,7 @@
     gap: em(20);
 
     @media (max-width: $breakpoint768) {
-      grid-template-columns: repeat(1, 1 fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 
