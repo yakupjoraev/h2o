@@ -1238,12 +1238,12 @@ a.ui-button:active,
   color: var(--grey-color);
 }
 
-.input.js-error {
+.input.js_error {
   border: 1px solid var(--red-color);
   color: var(--red-color);
 }
 
-.input.js-error ~ .password-view svg path {
+.input.js_error ~ .password-view svg path {
   stroke: var(--red-color);
 }
 
