@@ -63,6 +63,7 @@
     line-height: rem(15);
     color: var(--text-color);
   }
+
 }
 
 
@@ -105,6 +106,19 @@
       stroke: var(--red-color);
     }
   }
+
+  &.js_error::placeholder {
+    color: var(--red-color);
+  }
+
+  &.js_error~.label {
+    color: var(--red-color);
+  }
+
+  &.js_error:focus~.label {
+    color: var(--red-color);
+  }
+
 }
 
 //radio

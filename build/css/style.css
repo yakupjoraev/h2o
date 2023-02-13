@@ -1247,6 +1247,34 @@ a.ui-button:active,
   stroke: var(--red-color);
 }
 
+.input.js_error::-webkit-input-placeholder {
+  color: var(--red-color);
+}
+
+.input.js_error::-moz-placeholder {
+  color: var(--red-color);
+}
+
+.input.js_error:-ms-input-placeholder {
+  color: var(--red-color);
+}
+
+.input.js_error::-ms-input-placeholder {
+  color: var(--red-color);
+}
+
+.input.js_error::placeholder {
+  color: var(--red-color);
+}
+
+.input.js_error ~ .label {
+  color: var(--red-color);
+}
+
+.input.js_error:focus ~ .label {
+  color: var(--red-color);
+}
+
 .radio-group {
   display: -webkit-box;
   display: -ms-flexbox;
