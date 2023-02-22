@@ -337,7 +337,7 @@ main {
   color: var(--grey-color);
 }
 
-.edit-post__select.js-error {
+.edit-post__select.js_error {
   border: 1px solid var(--red-color);
   color: var(--red-color);
 }
