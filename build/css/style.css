@@ -1764,7 +1764,7 @@ a.ui-button:active,
   color: var(--grey-color);
 }
 
-.add-entry__select.js-error {
+.add-entry__select.js_error {
   border: 1px solid var(--red-color);
   color: var(--red-color);
 }
