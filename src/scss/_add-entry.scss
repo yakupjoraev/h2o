@@ -180,20 +180,23 @@
 }
 
 .add-entry__added--loading {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 
   & .add-entry__btn {
     position: relative;
+    width: 100%;
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 90%;
-      height: 100%;
-      background: linear-gradient(90deg, rgba(50, 136, 180, 0.1) 64.05%, rgba(50, 136, 180, 0) 64.06%, rgba(50, 136, 180, 0) 100%);
-    }
+  & .add-entry__btn-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(50, 136, 180, 0.1) 64.05%, rgba(50, 136, 180, 0) 64.06%, rgba(50, 136, 180, 0) 100%);
   }
 
 
