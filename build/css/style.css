@@ -1740,6 +1740,7 @@ a.ui-button:active,
   font-size: 1rem;
   line-height: 1.375rem;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 .add-entry__select:disabled {
@@ -1766,6 +1767,7 @@ a.ui-button:active,
   font-size: 1rem;
   line-height: 1.375rem;
   color: var(--text-color);
+  cursor: pointer;
 }
 
 .add-entry__edit {
