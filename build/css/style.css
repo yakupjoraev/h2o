@@ -1382,6 +1382,14 @@ a.ui-button:active,
   border-color: var(--grey-color);
 }
 
+.radio-input.js_error ~ .radio-decor {
+  border: 1px solid var(--red-color);
+}
+
+.radio-input.js_error ~ .radio-descr {
+  color: var(--red-color);
+}
+
 .radio-decor {
   position: relative;
   width: 1.5625rem;

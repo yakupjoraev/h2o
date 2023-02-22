@@ -224,6 +224,16 @@
     background-color: var(--grey-color-2);
     border-color: var(--grey-color);
   }
+
+  &.js_error~.radio-decor {
+    border: 1px solid var(--red-color);
+
+  }
+
+  &.js_error~.radio-descr {
+    color: var(--red-color);
+  }
+
 }
 
 .radio-decor {
