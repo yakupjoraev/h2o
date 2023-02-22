@@ -43,6 +43,15 @@
   &:hover {
     background-color: rgba(50, 136, 180, 0.1);
   }
+
+  &.js_error {
+    border-color: var(--red-color) !important;
+    color: var(--red-color) !important;
+
+    svg path {
+      stroke: var(--red-color) !important;
+    }
+  }
 }
 
 .btn-disable {
