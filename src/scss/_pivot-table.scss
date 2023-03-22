@@ -55,19 +55,19 @@
   &__main {
     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: calc(100% - 90px);
-      width: rem(58);
-      background: linear-gradient(270deg, rgba(50, 136, 180, 0.19) 0%, rgba(50, 136, 180, 0) 100%);
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   height: calc(100% - 90px);
+    //   width: rem(58);
+    //   background: linear-gradient(270deg, rgba(50, 136, 180, 0.19) 0%, rgba(50, 136, 180, 0) 100%);
 
-      @media (max-width: $breakpoint768) {
-        height: calc(100% - 115px);
-      }
-    }
+    //   @media (max-width: $breakpoint768) {
+    //     height: calc(100% - 115px);
+    //   }
+    // }
   }
 
   // .pivot-table__content
@@ -81,7 +81,7 @@
 
     &::-webkit-scrollbar {
       // width: 4px;
-      height: 4px;
+      height: 7px;
     }
 
     &::-webkit-scrollbar-track {
@@ -109,8 +109,8 @@
   // .pivot-table__item
 
   &__item {
-    display: grid;
-    grid-template-columns: em(40) em(100) em(150) em(112) em(144) em(124) em(128) em(68) em(134) em(200) em(128) em(100) em(76) em(86) em(54);
+    display: flex;
+    // grid-template-columns: em(40) em(100) em(150) em(112) em(144) em(124) em(128) em(68) em(134) em(200) em(128) em(100) em(76) em(86) em(54);
 
     &:nth-child(odd) {
       background: rgba(50, 136, 180, 0.1);
@@ -139,7 +139,7 @@
     }
 
     & .pivot-table__item-info:last-child {
-      border: 0 5px 0 0;
+      border-radius: 0 5px 0 0;
     }
   }
 
@@ -149,7 +149,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: em(12) 0;
+    padding: em(12) em(5);
     overflow-y: auto;
     border-right: 1px solid var(--grey-color-2);
     border-bottom: 1px solid var(--grey-color-2);
@@ -164,7 +164,7 @@
 
     &::-webkit-scrollbar {
       // width: 4px;
-      height: 4px;
+      height: 6px;
     }
 
     &::-webkit-scrollbar-track {
@@ -392,4 +392,36 @@
   // .table-form__select-select
 
   &__select-select {}
+}
+
+// классы info-column с фиксированной шириной минимальный 50px и с каждым итератором на 50px большо
+// info-column__1  --50px
+// info-column__2  --100px
+// info-column__3  --150px
+// info-column__4  --200px
+// info-column__5  --250px
+// info-column__6  --300px
+
+.info-column__1 {
+  width: 50px;
+}
+
+.info-column__2 {
+  width: 100px;
+}
+
+.info-column__3 {
+  width: 150px;
+}
+
+.info-column__4 {
+  width: 200px;
+}
+
+.info-column__5 {
+  width: 250px;
+}
+
+.info-column__6 {
+  width: 300px;
 }
