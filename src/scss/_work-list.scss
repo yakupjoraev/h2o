@@ -91,3 +91,23 @@
 
   &__more {}
 }
+
+.work-list__add-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 100%;
+  padding: 20px 20px 20px;
+  background-color: var(--white-color);
+}
+
+.first-screen__link--add {
+  width: 1180px;
+  margin: 0 auto;
+
+  &:hover {
+    background-image: linear-gradient(268.89deg, #58c0d7 0, #3f98ce 100%);
+  }
+}

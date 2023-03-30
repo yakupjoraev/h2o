@@ -819,6 +819,9 @@ main {
   max-width: 100%;
   width: 100%;
   height: auto;
+  max-height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .ui-widget.ui-widget-content {
@@ -1929,6 +1932,31 @@ a.ui-button:active,
 
 .work-list__link:hover svg path {
   stroke: var(--main-color);
+}
+
+.work-list__add-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px 20px 20px;
+  background-color: var(--white-color);
+}
+
+.first-screen__link--add {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.first-screen__link--add:hover {
+  background-image: -o-linear-gradient(181.11deg, #58c0d7 0, #3f98ce 100%);
+  background-image: linear-gradient(268.89deg, #58c0d7 0, #3f98ce 100%);
 }
 
 .pivot-table {
