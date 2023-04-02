@@ -24,44 +24,74 @@
 
       <form class="pivot-table__form table-form" action="#">
 
-        <div class="table-form__datepickers">
-          <div class="table-form__datepicker">
-            <p class="table-form__datepicker-text">Показать период с</p>
-            <input class="table-form__datepicker-input input" type="text" id="datepicker-1" placeholder="25.10.22">
-          </div>
-
-          <div class="table-form__datepicker">
+        <div class="table-form__top">
+          <div class="table-form__datepickers">
             <div class="table-form__datepicker">
-              <p class="table-form__datepicker-text">по</p>
-              <input class="table-form__datepicker-input input" type="text" id="datepicker-2" placeholder="25.01.23">
+              <p class="table-form__datepicker-text">Показать период с</p>
+              <input class="table-form__datepicker-input input" type="text" id="datepicker-1" placeholder="25.10.22">
             </div>
-          </div>
 
-        </div>
-
-        <button class="table-form__btn btn-disable">Применить</button>
-
-        <label class="table-form__label radio-label" for="table-form-checkbox">
-          <input class="table-form__checkbox radio-input" type="checkbox" id="table-form-checkbox">
-          <div class="table-form__label-decor radio-decor">
+            <div class="table-form__datepicker">
+              <div class="table-form__datepicker">
+                <p class="table-form__datepicker-text">по</p>
+                <input class="table-form__datepicker-input input" type="text" id="datepicker-2" placeholder="25.01.23">
+              </div>
+            </div>
 
           </div>
 
-          <p class="table-form__label-descr radio-descr">
-            Только отчеты за сегодня
-          </p>
-        </label>
+          <div class="table-form__select-group input-group input">
+            <select class="table-form__select add-entry__select" name="select-user" id="select-user">
+              <option class="table-form__select-option add-entry__select-option" value="select-user-1">Выбрать мастера
+              </option>
+              <option class="table-form__select-option add-entry__select-option" value="select-user-2">Выбрать ученика
+              </option>
+              <option class="table-form__select-option add-entry__select-option" value="select-user-3">Выбрать подавана
+              </option>
+              <option class="table-form__select-option add-entry__select-option" value="select-user-4">Выбрать джедая
+              </option>
+            </select>
+          </div>
 
-        <div class="table-form__select">
-          <label class="table-form__select-label" for="table-form-select"></label>
-          <select class="table-form__select-select" name="sorting" id="table-form-select">
-            <option selected="selected">Сначала новые</option>
-            <option>Сначала</option>
-            <option>новые</option>
-            <option>Старые</option>
-            <option>Пожилые</option>
-          </select>
+          <div class="table-form__num-group">
+            <input class="table-form__input input" type="text" placeholder="Заводской номер">
+            <label class="table-form__label label" for="" style="position: absolute; 
+              opacity: 0;
+              user-select: none;
+              pointer-events: none;">
+              Заводской номер
+            </label>
+          </div>
+
+          <button class="table-form__btn btn-disable">Применить</button>
         </div>
+
+        <div class="table-form__bottom">
+          <label class="table-form__label radio-label" for="table-form-checkbox">
+            <input class="table-form__checkbox radio-input" type="checkbox" id="table-form-checkbox">
+            <div class="table-form__label-decor radio-decor">
+
+            </div>
+
+            <p class="table-form__label-descr radio-descr">
+              Только отчеты за сегодня
+            </p>
+          </label>
+
+          <div class="table-form__select">
+            <label class="table-form__select-label" for="table-form-select"></label>
+            <select class="table-form__select-select" name="sorting" id="table-form-select">
+              <option selected="selected">Сначала новые</option>
+              <option>Сначала</option>
+              <option>новые</option>
+              <option>Старые</option>
+              <option>Пожилые</option>
+            </select>
+          </div>
+        </div>
+
+
+
       </form>
 
       <div class="pivot-table__main">
